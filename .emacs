@@ -22,7 +22,7 @@
      ("melpa" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (org multiple-cursors solidity-mode solarized-theme eink-theme))))
+    (tuareg markdown-mode evil org multiple-cursors solidity-mode solarized-theme eink-theme))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
