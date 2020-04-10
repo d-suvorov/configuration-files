@@ -38,3 +38,7 @@
 
 ;; Scilla mode
 (load-file "~/workplace/scilla/misc/emacs-mode/scilla.el")
+
+;; Agda mode
+(load-file (let ((coding-system-for-read 'utf-8))
+                (shell-command-to-string "agda-mode locate")))
