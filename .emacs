@@ -42,3 +42,6 @@
 ;; Agda mode
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
+
+;; NuSMV mode
+(load-file "~/misc/emacs-modes/nusmv-mode.el")
