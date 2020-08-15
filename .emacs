@@ -19,6 +19,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (adwaita)))
+ '(org-agenda-files
+   (quote
+    ("~/Dropbox/org/study.org" "~/Dropbox/org/gtd/maintenance.org" "~/Dropbox/org/gtd/teaching.org" "~/Dropbox/org/gtd/ctlab.org")))
  '(org-enforce-todo-checkbox-dependencies t)
  '(org-enforce-todo-dependencies t)
  '(org-log-done (quote time))
