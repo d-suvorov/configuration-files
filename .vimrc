@@ -18,3 +18,6 @@ filetype plugin indent on    " required
 
 set tabstop=2
 set shiftwidth=2
+
+set list
+set listchars=space:·,tab:\ \ ,eol:¬
