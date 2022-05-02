@@ -21,3 +21,6 @@ set shiftwidth=2
 
 set list
 set listchars=space:·,tab:\ \ ,eol:¬
+
+highlight SpecialKey ctermfg=DarkGray
+highlight NonText ctermfg=DarkGray
