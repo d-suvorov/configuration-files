@@ -27,3 +27,5 @@ highlight NonText ctermfg=DarkGray
 
 set ruler
 set relativenumber
+
+set mouse=a
