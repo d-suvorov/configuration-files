@@ -24,3 +24,6 @@ set listchars=space:·,tab:\ \ ,eol:¬
 
 highlight SpecialKey ctermfg=DarkGray
 highlight NonText ctermfg=DarkGray
+
+set ruler
+set relativenumber
