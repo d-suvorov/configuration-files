@@ -1,3 +1,10 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -19,21 +26,25 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (adwaita)))
- '(org-agenda-files
-   (quote
-    ("~/Dropbox/org/study.org" "~/Dropbox/org/gtd/maintenance.org" "~/Dropbox/org/gtd/teaching.org" "~/Dropbox/org/gtd/ctlab.org")))
+ ;; '(org-agenda-files
+ ;;  (quote
+ ;;   ("~/Dropbox/org/study.org" "~/Dropbox/org/gtd/maintenance.org" "~/Dropbox/org/gtd/teaching.org" "~/Dropbox/org/gtd/ctlab.org")))
+ '(org-agenda-files '("~/Dropbox/org/All.org" "~/org/work-ng-1.org"))
+
  '(org-clock-into-drawer "CLOCKING")
  '(org-enforce-todo-checkbox-dependencies t)
  '(org-enforce-todo-dependencies t)
  '(org-log-done (quote time))
  '(org-log-into-drawer t)
- '(package-archives
-   (quote
-    (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (haskell-mode tuareg markdown-mode evil org multiple-cursors solidity-mode solarized-theme eink-theme))))
+    (haskell-mode
+     tuareg
+     markdown-mode
+     evil
+     multiple-cursors
+     solarized-theme
+     eink-theme))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -43,16 +54,10 @@
  )
 
 ;; Proof General support
-(load-file "~/misc/PG/generic/proof-site.el")
+;; (load-file "~/misc/PG/generic/proof-site.el")
 ;; Ssreflect support
-(load-file "~/misc/math-comp/mathcomp/ssreflect/pg-ssr.el")
-
-;; Scilla mode
-(load-file "~/workplace/scilla/misc/emacs-mode/scilla.el")
+;; (load-file "~/misc/math-comp/mathcomp/ssreflect/pg-ssr.el")
 
 ;; Agda mode
-(load-file (let ((coding-system-for-read 'utf-8))
-                (shell-command-to-string "agda-mode locate")))
-
-;; NuSMV mode
-(load-file "~/misc/emacs-modes/nusmv-mode.el")
+;; (load-file (let ((coding-system-for-read 'utf-8))
+;;                 (shell-command-to-string "agda-mode locate")))
