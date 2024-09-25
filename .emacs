@@ -24,33 +24,24 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (adwaita)))
- ;; '(org-agenda-files
- ;;  (quote
- ;;   ("~/Dropbox/org/study.org" "~/Dropbox/org/gtd/maintenance.org" "~/Dropbox/org/gtd/teaching.org" "~/Dropbox/org/gtd/ctlab.org")))
+ '(custom-enabled-themes '(gruber-darker))
+ '(custom-safe-themes
+   '("e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7" default))
  '(org-agenda-files '("~/Dropbox/org/All.org" "~/org/work-ng-1.org"))
-
  '(org-clock-into-drawer "CLOCKING")
  '(org-enforce-todo-checkbox-dependencies t)
  '(org-enforce-todo-dependencies t)
- '(org-log-done (quote time))
+ '(org-log-done 'time)
  '(org-log-into-drawer t)
  '(package-selected-packages
-   (quote
-    (haskell-mode
-     tuareg
-     markdown-mode
-     evil
-     multiple-cursors
-     solarized-theme
-     eink-theme))))
+   '(gruber-darker-theme haskell-mode tuareg markdown-mode evil multiple-cursors solarized-theme eink-theme)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :extend nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight regular :height 124 :width normal :family "Iosevka")))))
 
 ;; Proof General support
 ;; (load-file "~/misc/PG/generic/proof-site.el")
